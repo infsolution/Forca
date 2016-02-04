@@ -26,7 +26,7 @@ public class Jogo {
 				forca.addRodada(rodada,namePlayer);		
 				palSor=forca.getRodada().letterOfWord(forca.getRodada().getPalavras());
 				System.out.println(forca.toString());
-				//System.out.println(forca.getRodada().getPalavraSorte());
+				forca.getRodada().getPalavraSorte();
 				System.out.println("Dica de Palavra:\n"+">>>>>"+forca.getRodada().getDica()+"<<<<<");
 				palMos=forca.getRodada().hideWord(palSor);
 				do{
