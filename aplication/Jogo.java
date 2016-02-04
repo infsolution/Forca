@@ -16,7 +16,7 @@ public class Jogo {
 		String palDes;
 		int opt=0;
 		while(opt!=9){
-			System.out.println("Menu:\n01- Jogar.\n02- Ver escores.\n03- Cadastrar Tema/palavra");
+			System.out.println("Menu:\n01- Jogar.\n02- Ver escores.\n03- Cadastrar Tema/palavra\n09- Sair");
 			opt=ler.nextInt();
 			if(opt==1){
 				forca.getRodada().getBoneco().setErros(0);
@@ -26,7 +26,7 @@ public class Jogo {
 				forca.addRodada(rodada,namePlayer);		
 				palSor=forca.getRodada().letterOfWord(forca.getRodada().getPalavras());
 				System.out.println(forca.toString());
-				System.out.println(forca.getRodada().getPalavraSorte());
+				//System.out.println(forca.getRodada().getPalavraSorte());
 				System.out.println("Dica de Palavra:\n"+">>>>>"+forca.getRodada().getDica()+"<<<<<");
 				palMos=forca.getRodada().hideWord(palSor);
 				do{
